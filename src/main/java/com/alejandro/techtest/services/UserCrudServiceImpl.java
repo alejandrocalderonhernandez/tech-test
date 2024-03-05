@@ -5,7 +5,6 @@ import com.alejandro.techtest.models.entites.UserEntity;
 import com.alejandro.techtest.repository.UserRepository;
 import com.alejandro.techtest.services.definitions.UserCrudService;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +13,6 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 import java.util.UUID;
 
-@Slf4j
 @AllArgsConstructor
 @Transactional
 @Service

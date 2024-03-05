@@ -19,6 +19,7 @@ public class CountriesClient {
     }
 
     public ResponseEntity<CountryDto[]> getAllCountries() {
+        log.info("making request {}", this.uri);
         return this.restTemplate
                 .getForEntity(this.uri, CountryDto[].class);
     }
